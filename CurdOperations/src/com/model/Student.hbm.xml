@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 5, 2015 9:48:26 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.model.Student" table="student" catalog="college">
+        <id name="rollno" type="java.lang.Integer">
+            <column name="rollno" />
+            <generator class="identity" />
+        </id>
+        <property name="studName" type="string">
+            <column name="stud_name" length="45" not-null="true" />
+        </property>
+        <property name="batchId" type="int">
+            <column name="batch_id" not-null="true" />
+        </property>
+        <property name="uname" type="string">
+            <column name="uname" length="45" not-null="true" />
+        </property>
+        <property name="pass" type="string">
+            <column name="pass" length="45" not-null="true" />
+        </property>
+        <property name="lname" type="string">
+            <column name="lname" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

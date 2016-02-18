@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+	<struts>
+		<package name="login" extends="struts-default" namespace="/">
+			<action name="login" class="com.action.LoginAction">
+				<result name="success">success.jsp</result>
+				<result name="error">error.jsp</result>
+				<result name="input">index.jsp</result>
+			</action>
+			<action name="EditStud" class="com.action.StudentAction" method="editRecord">
+				<result name="edit">editRecord.jsp</result>
+			</action>
+			<action name="updateData" class="com.action.StudentAction" method="updateData">
+				<result name="success">success.jsp</result>
+			</action>
+		</package>
+	</struts>

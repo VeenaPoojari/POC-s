@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="treatonline" match-name="adverse_drug_reaction"/>
+  <table-filter match-catalog="treatonline" match-name="appointment_details"/>
+  <table-filter match-catalog="treatonline" match-name="bill_details"/>
+  <table-filter match-catalog="treatonline" match-name="bill_item_details"/>
+  <table-filter match-catalog="treatonline" match-name="certificate_field_master"/>
+  <table-filter match-catalog="treatonline" match-name="certificate_master"/>
+  <table-filter match-catalog="treatonline" match-name="city"/>
+  <table-filter match-catalog="treatonline" match-name="clinic_expense"/>
+  <table-filter match-catalog="treatonline" match-name="cummulative_expense"/>
+  <table-filter match-catalog="treatonline" match-name="doctor"/>
+  <table-filter match-catalog="treatonline" match-name="expence_type"/>
+  <table-filter match-catalog="treatonline" match-name="file_encryption"/>
+  <table-filter match-catalog="treatonline" match-name="hospital"/>
+  <table-filter match-catalog="treatonline" match-name="hospital_detail"/>
+  <table-filter match-catalog="treatonline" match-name="image_prescription"/>
+  <table-filter match-catalog="treatonline" match-name="inventory_daily_stock_details"/>
+  <table-filter match-catalog="treatonline" match-name="inventry_master"/>
+  <table-filter match-catalog="treatonline" match-name="patient"/>
+  <table-filter match-catalog="treatonline" match-name="pharmacological_names"/>
+  <table-filter match-catalog="treatonline" match-name="pharmacy"/>
+  <table-filter match-catalog="treatonline" match-name="prescription"/>
+  <table-filter match-catalog="treatonline" match-name="prescription_inventory_details"/>
+  <table-filter match-catalog="treatonline" match-name="prescription_inventory_master"/>
+  <table-filter match-catalog="treatonline" match-name="prescriptiondetails"/>
+  <table-filter match-catalog="treatonline" match-name="privilege_master"/>
+  <table-filter match-catalog="treatonline" match-name="role"/>
+  <table-filter match-catalog="treatonline" match-name="service"/>
+  <table-filter match-catalog="treatonline" match-name="slot_master"/>
+  <table-filter match-catalog="treatonline" match-name="text_prescription"/>
+  <table-filter match-catalog="treatonline" match-name="treatment_details"/>
+  <table-filter match-catalog="treatonline" match-name="user"/>
+  <table-filter match-catalog="treatonline" match-name="vaccine"/>
+  <table-filter match-catalog="treatonline" match-name="vaccine_master"/>
+  <table-filter match-catalog="treatonline" match-name="vaccine_remainder"/>
+  <table-filter match-catalog="treatonline" match-name="vaccine_treatment_details"/>
+  <table-filter match-catalog="treatonline" match-name="vender_master"/>
+</hibernate-reverse-engineering>

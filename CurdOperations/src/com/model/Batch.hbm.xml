@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 5, 2015 9:48:26 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.model.Batch" table="batch" catalog="college">
+        <id name="batchId" type="java.lang.Integer">
+            <column name="batch_id" />
+            <generator class="identity" />
+        </id>
+        <property name="batchName" type="string">
+            <column name="batch_name" length="45" not-null="true" />
+        </property>
+        <property name="facultyId" type="int">
+            <column name="faculty_id" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
