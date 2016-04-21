@@ -38,15 +38,13 @@ public class StateServlet extends HttpServlet{
 				Statement statement=connection.createStatement();
 				String sql="SELECT * FROM state s , country c where s.country_id=c.country_id and s.country_id="+id;
 				ResultSet resultSet=statement.executeQuery(sql);
+				response.setContentType("text/html");
+				PrintWriter out = response.getWriter();
+				out.write("<select>");
+				out.write("<option>Select</option>");
 				while(resultSet.next()){
-					response.setContentType("text/html");
-					PrintWriter out = response.getWriter();
-					 
-					out.write("<select>");
 					out.write("<option value=" + resultSet.getInt(1) + ">" + resultSet.getString(2) + "</option>");
-					
 				}
-			
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
