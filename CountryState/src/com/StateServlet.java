@@ -9,12 +9,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Iterator;
-
-
-
-
-
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -33,8 +27,7 @@ public class StateServlet extends HttpServlet{
 	protected void service(HttpServletRequest request,
 			HttpServletResponse response)
 			throws ServletException, IOException {
-		String sid=request.getParameter("id");
-		System.out.println(sid);
+		
 		Integer id=Integer.parseInt(request.getParameter("role"));
 		System.out.println("id: "+id);
 		ArrayList<State> states=new ArrayList<State>();
@@ -51,41 +44,9 @@ public class StateServlet extends HttpServlet{
 					 
 					out.write("<select>");
 					out.write("<option value=" + resultSet.getInt(1) + ">" + resultSet.getString(2) + "</option>");
-					/*State state=new State();
-					state.setStateId(resultSet.getInt(1));
-					state.setStateName(resultSet.getString(2));
-					states.add(state);*/
+					
 				}
-				/*System.out.println(states);
-				if(id==1){
-					response.setContentType("text/html");
-					PrintWriter out = response.getWriter();
-					 
-					out.write("<select>");
-					//out.write("<option>Select</option>");
-					Iterator itr=states.iterator();
-					while(itr.hasNext()){
-						State state=(State)itr.next();
-						System.out.println(state.getStateName());
-						out.write("<option value=" + state.getStateId() + ">" + state.getStateName() + "</option>");
-					}
-					out.write("</select>");
-				}else if(id==2){
-					response.setContentType("text/html");
-					PrintWriter out = response.getWriter();
-					 
-					out.write("<select>");
-					out.write("<option>Select</option>");
-					Iterator itr=states.iterator();
-					while(itr.hasNext()){
-						State state=(State)itr.next();
-						System.out.println(state.getStateName());
-						out.write("<option value=" + state.getStateId() + ">" + state.getStateName() + "</option>");
-					}
-					out.write("</select>");
-				}*/
-				
-				
+			
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
